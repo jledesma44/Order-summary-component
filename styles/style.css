@@ -5,3 +5,30 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+:root {
+  //   Primary colors
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  //   Neutral colors
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e0e8ff;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
