@@ -4,7 +4,7 @@
   "description": "![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync -sw --browser 'Firefox Developer Edition'"
+    "start": "browser-sync -sw --browser 'Chrome'"
   },
   "keywords": [],
   "author": "",
