@@ -28,10 +28,16 @@ body {
   background: #e0e8ff;
   font-family: 'Red Hat Display', sans-serif;
   font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(/images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .card {
   display: grid;
   grid-template-columns: 1fr;
