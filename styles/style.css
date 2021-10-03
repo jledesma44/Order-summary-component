@@ -32,3 +32,18 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 300px;
+  border-radius: 20px;
+  box-shadow: ;
+}
+.card__image {
+  background-size: cover;
+  min-height: 180px;
+  background-position: center;
+}
+.card-content {
+  padding: 30px;
+}
