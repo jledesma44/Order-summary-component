@@ -1,6 +1,9 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  margin: auto 0;
+  bottom: 40px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -40,16 +43,76 @@ body {
 
 .card {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 200px 300px;
-  border-radius: 20px;
-  box-shadow: ;
+  grid-template-columns: 450px;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: 'card-image' 'card-content';
+
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
+
 .card__image {
   background-size: cover;
-  min-height: 180px;
+  min-height: 220px;
   background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.card-content {
+.card__content {
   padding: 30px;
+  text-align: center;
+}
+.card__content--title {
+  font-size: 28px;
+  margin: 50px 0 33px 0;
+  line-height: 1.7;
+}
+.card__content--info {
+  color: #717fa6;
+  line-height: 1.8;
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 27px;
+}
+
+.card__content--purchase-details {
+  background: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 50px;
+  padding: 30px 25px;
+  line-height: 1.8;
+}
+.card__content--purchase-details-plan-price {
+  color: #717fa6;
+}
+.card__content--purchase-details-change a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.btn {
+  background: var(--Bright-blue);
+  padding: 15px 100px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 35px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  background: #766cf1;
+}
+.cancel-order {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  font-size: 15px;
+  font-weight: 900;
 }

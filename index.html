@@ -14,7 +14,7 @@
 <body>
 
   <div class="card">
-    <div class="card__image" style="background-image:url(/order-summary-component-main/Order-summary-component/images/illustration-hero.svg)"></div>
+    <div class="card__image" style="background-image:url(/images/illustration-hero.svg)"></div>
     <div class="card__content">
       <h2 class="card__content--title">Order Summary</h2>
       <p class="card__content--info">
@@ -22,12 +22,21 @@
         device anywhere you like!
       </p>
       <div class="card__content--purchase-details">
-        Annual Plan
-        $59.99/year 
+        <div class="card__content--purchase-details-icon">
+          <img src="/images/icon-music.svg" alt="music symbol">
+        </div>
+        <div class="card__content--purchase-details-plan">
+          <strong>Annual Plan</strong><br>
+          <p class="card__content--purchase-details-plan-price">$59.99/year</p>
+        </div> 
+        
+        <div class="card__content--purchase-details-change">
+          <a href="#">Change</a>
+        </div>
       </div>
       <a href="#" class="btn">Proceed to Payment</a>
+      <a href="#" class="cancel-order">Cancel Order</a>
     </div>
-
   </div>
 
   
@@ -36,10 +45,9 @@
 
   
 
-  Change
+  
 
   
-  Cancel Order
 
 
   <footer>
